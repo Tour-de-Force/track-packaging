@@ -2,16 +2,15 @@
 
 echo "Installing PostgreSQL and other dependencies..."
 echo "This may take a few minutes..."
-apt-get install -y git unzip build-essential python-pip #&> /dev/null
-apt-get install -y postgresql-9.3-postgis-2.1 #&> /dev/null
-apt-get install -y postgresql-contrib-9.3 proj-bin libgeos-dev #&> /dev/null
+apt-get install -y git unzip build-essential python-pip
+apt-get install -y postgresql-9.3-postgis-2.1
+apt-get install -y postgresql-contrib-9.3 proj-bin libgeos-dev
 echo "...Dependencies installed"
 
 echo "Installing OpenStreetMap dependencies..."
-add-apt-repository -y ppa:kakrueger/openstreetmap #&> /dev/null
-apt-get update #&> /dev/null
-apt-get install -y osm2pgsql osmctools #&> /dev/null
-apt-get install -y mapnik-utils
+add-apt-repository -y ppa:kakrueger/openstreetmap
+apt-get update
+apt-get install -y osm2pgsql osmctools mapnik-utils
 echo "...Dependencies installed"
 
 echo "Configuring PostGIS database..."
