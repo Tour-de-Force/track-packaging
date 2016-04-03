@@ -1,7 +1,7 @@
 #! /bin/sh
 
 echo "Installing GNU dependencies..."
-apt-get install -y git unzip build-essential python-pip
+apt-get install -y git zip unzip build-essential python-pip
 echo "...Dependencies installed"
 
 echo "Installing OpenStreetMap dependencies..."
